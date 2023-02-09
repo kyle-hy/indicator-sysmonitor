@@ -384,12 +384,13 @@ class NvGPUMem(BaseSensor):
 
     def get_value(self, sensor):
         # degrees symbol is unicode U+00B0
-        return "{}\u00B0C".format(self._fetch_gpumem())
+        return "{:02.0f}%".format(self._fetch_gpumem())
 
     def _fetch_gpumem(self):
         result = subprocess.check_output(
             ['nvidia-smi', '--query-gpu=utilization.memory', '--format=csv'])
         perc = result.splitlines()[1]
+        perc = perc[:-2]
         return int(perc)
 
 
