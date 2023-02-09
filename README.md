@@ -11,7 +11,7 @@ sudo apt install python3-psutil gir1.2-appindicator3-0.1
 
 Then:
 
-git clone https://github.com/fossfreedom/indicator-sysmonitor.git
+git clone https://github.com/kyle-hy/indicator-sysmonitor.git
 cd indicator-sysmonitor
 sudo make install
 cd ..
@@ -76,7 +76,7 @@ Installation - Budgie-Desktop:
 On budgie-desktop based installation  - manual installation
 
     sudo apt-get install python3-psutil curl git
-    git clone https://github.com/fossfreedom/indicator-sysmonitor.git
+    git clone https://github.com/kyle-hy/indicator-sysmonitor.git
     cd indicator-sysmonitor
     sudo make installbudgie
     budgie-panel --replace &
@@ -89,7 +89,7 @@ On Ubuntu and derivatives - manual installation
 
 
     sudo apt-get install python3-psutil curl git gir1.2-appindicator3-0.1
-    git clone https://github.com/fossfreedom/indicator-sysmonitor.git
+    git clone https://github.com/kyle-hy/indicator-sysmonitor.git
     cd indicator-sysmonitor
     sudo make install
     nohup indicator-sysmonitor &
